@@ -1,0 +1,151 @@
+nav {
+  background-color: #282c34;
+}
+#R {
+  font-size: 35px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #61dafb;
+}
+#R:hover {
+  text-shadow: 5px 7px 5px black;
+}
+#nav {
+  display: flex;
+  justify-content: flex-end;
+}
+ul .nav-link {
+  font-size: 25px;
+  font-weight: bolder;
+  font-family: "Mate SC", serif;
+  color: #61dafb;
+  margin-left: 10px;
+}
+ul .nav-link:hover {
+  text-decoration: underline;
+  color: #61dafb;
+}
+#first {
+  height: 80vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+#second {
+  height: 80vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+h1 {
+  font-family: "Mate SC", serif;
+  text-shadow: 0px 5px 5px black;
+}
+/*hamburger*/
+#bars {
+  font-size: 30px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #61dafb;
+  transition: 0.6s;
+  transform: rotate(0deg);
+}
+#bars:hover {
+  transition: 0.6s;
+  transform: rotate(90deg);
+}
+#main {
+  width: 35ich;
+  animation: open 5s, blink 1.5s infinite;
+  white-space: wrap;
+  background-color: #2a3344;
+  color: #61dafb;
+}
+#bg {
+  background-color: #2a3344;
+}
+/*opening*/
+@keyframes open {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+.butt {
+  box-shadow: 5px 5px 5px black;
+}
+#firstc {
+  height: 80vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #282c34;
+}
+.ft {
+  font-size: 2em;
+}
+#a:hover {
+  transition: 0.3s;
+  color: rgb(219, 20, 219);
+}
+li,
+h2 {
+  font-size: 1.5em;
+  font-family: "Roboto Mono", monospace;
+  color: white;
+}
+form {
+  border-radius: 20px;
+}
+/*Letter-spacing for welcome*/
+#typo {
+  white-space: nowrap;
+}
+#typo:hover {
+  animation: wide 1.5s ease 2;
+}
+@keyframes wide {
+  0% {
+    letter-spacing: 0px;
+  }
+  50% {
+    letter-spacing: 10px;
+  }
+  100% {
+    letter-spacing: 0px;
+  }
+}
+#img {
+  border-radius: 300px;
+  border: 20px groove rgb(11, 210, 236);
+  box-shadow: 5px 10px 5px black;
+}
+#img:hover {
+  transition: 1s ease;
+  width: 320px;
+  height: 320px;
+}
+.links {
+  display: flex;
+  justify-content: space-around;
+}
+.link {
+  font-size: 30px;
+  font-weight: bold;
+}
+#cardef {
+  box-shadow: 0px 5px 5px black;
+  padding: 30px;
+}
+#cardef:hover {
+  padding: 0px;
+  box-shadow: 0px 5px 5px #61dafb;
+}
