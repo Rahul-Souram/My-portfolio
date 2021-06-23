@@ -5,7 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   return (
     <div>
-      <div className="footer p-3 fixed-bottom">
+      <div className="footer p-3 ">
         <a href="http://fb.com/souramrahul" className="text-info ft">
           <SiFacebook id="a" />
         </a>
