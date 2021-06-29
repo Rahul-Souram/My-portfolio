@@ -6,20 +6,23 @@ const Footer = () => {
   return (
     <div>
       <div className="footer p-3 ">
-        <a href="http://fb.com/souramrahul" className="text-info ft">
-          <SiFacebook id="a" />
-        </a>
-        <a href="http://instagram.com/im_rahulsouram7" className="text-info ft">
-          <GrInstagram id="a" />
-        </a>
         <a
           href="http://linkedin.com/in/rahul-souram-511719156"
-          className="text-info ft"
+          className="text-warning ft"
         >
           <FaLinkedin id="a" />
         </a>
-        <a href="http://github.com/rahul-souram" className="text-info ft">
+        <a href="http://github.com/rahul-souram" className="text-warning ft">
           <SiGithub id="a" />
+        </a>
+        <a href="http://fb.com/souramrahul" className="text-warning ft">
+          <SiFacebook id="a" />
+        </a>
+        <a
+          href="http://instagram.com/im_rahulsouram7"
+          className="text-warning ft"
+        >
+          <GrInstagram id="a" />
         </a>
       </div>
     </div>

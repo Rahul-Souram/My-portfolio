@@ -2,11 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 const About = () => {
   return (
-    <div id="bg" className="bg-dark text-light">
-      <h2 className="text-center text-dark bg-light p-3 display-3 text-decoration-underline">
+    <div className="bg-light text-dark" id="bg2">
+      <h2 className="text-center text-dark p-3 display-3 text-decoration-underline">
         <b>About Me</b>
       </h2>
-      <div className="container">
+      <div className="container-fluid p-5" id="bg2">
         <h1 className="text-decoration-underline">Name:</h1>
         <h2>Rahul Souram</h2>
         <h1 className="text-decoration-underline">Education :</h1>
@@ -59,7 +59,7 @@ const About = () => {
               </li>
             </div>
             <div className="col-lg-6">
-              <h1>Frameworks:</h1>
+              <h1>Frameworks :</h1>
               <li>
                 BOOTSTRAP
                 <div className="progress">
@@ -100,7 +100,7 @@ const About = () => {
           </div>
           <hr />
           <h1 className="text-decoration-underline">
-            Also some Knowledge of Backend:
+            Also some Knowledge of Backend :
           </h1>
           <li>
             NODE JS
@@ -146,7 +146,7 @@ const About = () => {
         >
           <h1>View My Projects</h1>
           <Link to="/projects">
-            <button className="btn btn-lg btn-outline-light butt ms-5 mt-3">
+            <button className="btn btn-lg btn-outline-primary butt ms-5 mt-3">
               My Projects
             </button>
           </Link>

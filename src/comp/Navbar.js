@@ -6,10 +6,10 @@ const Navbar = () => {
     <>
       <nav className="container-fluid navbar navbar-expand-lg sticky-top">
         <Link className="navbar-brand ms-3" to="/" id="R">
-          ℜ𝔞𝔥𝔲𝔩 𝔖𝔬𝔲𝔯𝔞𝔪
+          Rahul Souram
         </Link>
         <button
-          className="navbar-toggler text-info"
+          className="navbar-toggler"
           id="bars"
           type="button"
           data-bs-toggle="collapse"

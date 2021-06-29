@@ -8,24 +8,24 @@ const Card = (item) => {
       <div className="col-md-4 col-12 mx-auto ">
         <div className="card bg-dark m-3" key={id} id="cardef">
           <img src={img} className="card-img-top img-thumbnail" alt={img} />
-          <div className="card-body text-primary">
-            <h5 className="card-title font-weight-bold text-success">
+          <div className="card-body text-warning">
+            <h5 className="card-title font-weight-bold text-warning">
               {title}
             </h5>
             <p className="card-text">{desc}</p>
             <div style={{ display: "flex", justifyContent: "center" }}>
               <a href={plink} target="blank">
-                <button className="btn btn-lg btn-success butt">
+                <button className="btn btn-lg btn-outline-warning butt">
                   Check now
                 </button>
               </a>
             </div>
             <div className="links mt-3">
               <a href={glink}>
-                <SiGithub id="a" className="link" />
+                <SiGithub id="a" className="link text-warning" />
               </a>
               <a href={plink} target="blank">
-                <BiLinkExternal id="a" className="link" />
+                <BiLinkExternal id="a" className="link text-warning" />
               </a>
             </div>
           </div>

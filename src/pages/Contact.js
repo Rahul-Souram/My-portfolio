@@ -60,10 +60,10 @@ const Contact = () => {
         </div>
         <br />
         <div className="text-center mt-">
-          <li className="text-info">
+          <li className="text-warning">
             Contact No <FaPhoneAlt /> : +91-9959157666.
           </li>
-          <li className="text-info pb-3">
+          <li className="text-warning pb-3">
             Email <GoMail /> : souramrahul@gmail.com
           </li>
         </div>
