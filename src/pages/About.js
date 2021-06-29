@@ -6,7 +6,7 @@ const About = () => {
       <h2 className="text-center text-dark p-3 display-3 text-decoration-underline">
         <b>About Me</b>
       </h2>
-      <div className="container-fluid p-5" id="bg2">
+      <div className="container p-5" id="bg2">
         <h1 className="text-decoration-underline">Name:</h1>
         <h2>Rahul Souram</h2>
         <h1 className="text-decoration-underline">Education :</h1>
@@ -100,7 +100,7 @@ const About = () => {
           </div>
           <hr />
           <h1 className="text-decoration-underline">
-            Also some Knowledge of Backend :
+            Also some Knowledge of Backend:
           </h1>
           <li>
             NODE JS
