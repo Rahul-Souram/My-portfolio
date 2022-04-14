@@ -6,7 +6,7 @@ import img5 from "./images/img5.png";
 import img6 from "./images/img6.png";
 import img7 from "./images/img7.png";
 import img8 from "./images/img8.png";
-const data = [
+export const data = [
   {
     id: "1",
     img: img1,
@@ -72,4 +72,64 @@ const data = [
     plink: "https://calcii.netlify.app",
   },
 ];
-export default data;
+
+export const skills = [
+  {
+    id: "01",
+    title: "HTML",
+    width: "90%",
+  },
+  {
+    id: "02",
+    title: "CSS",
+    width: "80%",
+  },
+  {
+    id: "03",
+    title: "SASS",
+    width: "80%",
+  },
+  {
+    id: "04",
+    title: "JAVASCRIPT",
+    width: "85%",
+  },
+  {
+    id: "05",
+    title: "BOOTSTRAP",
+    width: "75%",
+  },
+  {
+    id: "06",
+    title: "REACTJS",
+    width: "80%",
+  },
+  {
+    id: "07",
+    title: "REDUX",
+    width: "80%",
+  },
+  {
+    id: "08",
+    title: "GRAPHQL",
+    width: "70%",
+  },
+];
+
+export const OtherSkills = [
+  {
+    id: "01",
+    title: "NODE JS",
+    width: "50%",
+  },
+  {
+    id: "02",
+    title: "EXPRESS JS",
+    width: "60%",
+  },
+  {
+    id: "03",
+    title: "MONGO DB",
+    width: "55%",
+  },
+];

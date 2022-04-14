@@ -4,7 +4,7 @@ import { FaBars } from "react-icons/fa";
 const Navbar = () => {
   return (
     <>
-      <nav className="container-fluid navbar navbar-expand-lg sticky-top">
+      <nav className="container-fluid navbar navbar-expand-lg fixed-top">
         <Link className="navbar-brand ms-3" to="/" id="R">
           Rahul Souram
         </Link>

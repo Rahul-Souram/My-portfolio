@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import "./App.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
@@ -10,8 +10,17 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Error from "./pages/Error";
+import ScrollArrow from "./comp/Scrolltop";
 
 function App() {
+  const [isEditing, setEditing] = useState(false);
+  const inputRef = useRef();
+  const focus = () => {
+    setEditing(!isEditing);
+    if (isEditing) {
+      inputRef.current.focus();
+    }
+  };
   return (
     <>
       <Router>
@@ -21,10 +30,10 @@ function App() {
             <Home />
           </Route>
           <Route path="/About">
-            <About />
+            <About focus={focus} />
           </Route>
           <Route path="/Projects">
-            <Projects />
+            <Projects inputRef={inputRef} />
           </Route>
           <Route path="/Contact">
             <Contact />
@@ -33,6 +42,7 @@ function App() {
             <Error />
           </Route>
         </Switch>
+        <ScrollArrow />
         <Footer />
       </Router>
     </>

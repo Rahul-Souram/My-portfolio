@@ -14,7 +14,7 @@ const Contact = () => {
         </h1>
         <br />
         <div id="firstc">
-          <h1 className="text-center" style={{ whiteSpace: "pre-line" }}>
+          <h1 className="text-center pt-5" style={{ whiteSpace: "pre-line" }}>
             If you want to get a hold of me
             <br />
             you can send me an email.

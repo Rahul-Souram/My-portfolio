@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { skills, OtherSkills } from "../data";
 const About = () => {
   return (
     <div className="bg-light text-dark" id="bg2">
@@ -21,136 +22,69 @@ const About = () => {
           <div className="row">
             <div className="col-lg-6">
               <h1>Basic :</h1>
-              <li>
-                HTML
-                <div className="progress">
-                  <div
-                    className="progress-bar progress-bar-striped progress-bar-animated"
-                    role="progressbar"
-                    style={{ width: "80%" }}
-                  >
-                    80
-                  </div>
-                </div>
-              </li>
-              <li>
-                CSS
-                <div className="progress">
-                  <div
-                    className="progress-bar progress-bar-striped progress-bar-animated"
-                    role="progressbar"
-                    style={{ width: "70%" }}
-                  >
-                    70
-                  </div>
-                </div>
-              </li>
-              <li>
-                JAVASCRIPT
-                <div className="progress">
-                  <div
-                    className="progress-bar progress-bar-striped progress-bar-animated"
-                    role="progressbar"
-                    style={{ width: "80%" }}
-                  >
-                    80
-                  </div>
-                </div>
-              </li>
-            </div>
-            <div className="col-lg-6">
-              <h1>Frameworks :</h1>
-              <li>
-                BOOTSTRAP
-                <div className="progress">
-                  <div
-                    className="progress-bar progress-bar-striped progress-bar-animated bg-success"
-                    role="progressbar"
-                    style={{ width: "70%" }}
-                  >
-                    70
-                  </div>
-                </div>
-              </li>
-              <li>
-                REACT JS
-                <div className="progress">
-                  <div
-                    className="progress-bar progress-bar-striped progress-bar-animated bg-success"
-                    role="progressbar"
-                    style={{ width: "75%" }}
-                  >
-                    75
-                  </div>
-                </div>
-              </li>
-              <li>
-                REDUX
-                <div className="progress">
-                  <div
-                    className="progress-bar progress-bar-striped progress-bar-animated bg-success"
-                    role="progressbar"
-                    style={{ width: "65%" }}
-                  >
-                    65
-                  </div>
-                </div>
-              </li>
+              <ul className="pro-bars">
+                {skills.map((items) => {
+                  const { id, title, width } = items;
+                  return (
+                    <>
+                      <li key={id} className="pb-3">
+                        {title}
+                        <div className="progress">
+                          <div
+                            className="progress-bar progress-bar-striped progress-bar-animated"
+                            role="progressbar"
+                            style={{ width: width }}
+                          >
+                            {width}
+                          </div>
+                        </div>
+                      </li>
+                    </>
+                  );
+                })}
+              </ul>
             </div>
           </div>
           <hr />
           <h1 className="text-decoration-underline">
             Also some Knowledge of Backend:
           </h1>
-          <li>
-            NODE JS
-            <div className="progress">
-              <div
-                className="progress-bar progress-bar-striped progress-bar-animated bg-secondary"
-                role="progressbar"
-                style={{ width: "50%" }}
-              >
-                50
-              </div>
-            </div>
-          </li>{" "}
-          <li>
-            EXPRESS JS
-            <div className="progress">
-              <div
-                className="progress-bar progress-bar-striped progress-bar-animated bg-secondary"
-                role="progressbar"
-                style={{ width: "60%" }}
-              >
-                60
-              </div>
-            </div>
-          </li>
-          <li>
-            MONGO DB
-            <div className="progress">
-              <div
-                className="progress-bar progress-bar-striped progress-bar-animated bg-secondary"
-                role="progressbar"
-                style={{ width: "40%" }}
-              >
-                50
-              </div>
-            </div>
-          </li>{" "}
+          <ul className="pro-bars">
+            {OtherSkills.map((items) => {
+              const { id, title, width } = items;
+              return (
+                <>
+                  <li key={id}>
+                    {title}
+                    <div className="progress">
+                      <div
+                        className="progress-bar progress-bar-striped progress-bar-animated bg-secondary"
+                        role="progressbar"
+                        style={{ width: width }}
+                      >
+                        {width}
+                      </div>
+                    </div>
+                  </li>
+                </>
+              );
+            })}
+          </ul>
         </div>
         <hr />
-        <div
+        <Link
+          to="/projects"
           style={{ display: "grid", justifyContent: "center" }}
-          className="p-5"
         >
-          <h1>View My Projects</h1>
-          <Link to="/projects">
-            <button className="btn btn-lg btn-outline-primary butt ms-5 mt-3">
-              My Projects
-            </button>
-          </Link>
-        </div>
+          <but
+            className="btn btn-primary butt mt-3"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+          >
+            My Projects
+          </but>
+        </Link>
       </div>
     </div>
   );
