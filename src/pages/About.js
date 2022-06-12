@@ -4,7 +4,7 @@ import { skills, OtherSkills } from "../data";
 const About = () => {
   return (
     <div className="bg-light text-dark" id="bg2">
-      <h2 className="text-center text-dark p-3 display-3 text-decoration-underline">
+      <h2 className="text-center text-dark page-title display-3 text-decoration-underline">
         <b>About Me</b>
       </h2>
       <div className="container p-5" id="bg2">

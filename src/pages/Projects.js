@@ -5,7 +5,7 @@ import Card from "../comp/Card";
 const Projects = () => {
   return (
     <>
-      <h2 className="text-center text-dark bg-light mt-3 display-3 text-decoration-underline">
+      <h2 className="text-center text-dark bg-light page-title display-3 text-decoration-underline">
         MY PROJECTS{" "}
       </h2>
       <div className="container-fluid mb-5 bg-dark pt-5" id="bg">
